@@ -6,7 +6,7 @@ StandardOutput=console
 Type=simple
 Restart=always
 RestartSec=1800s
-ExecStart=/bin/bash %h/Shortix/shortix.sh
+ExecStart=shortix
 
 [Install]
 WantedBy=multi-user.target

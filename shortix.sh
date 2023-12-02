@@ -2,13 +2,13 @@
 #Set variables for all needed files an paths
 PROTONTRICKS_NATIVE="protontricks"
 PROTONTRICKS_FLAT="flatpak run com.github.Matoking.protontricks"
-SHORTIX_DIR=$HOME/Shortix
+SHORTIX_DIR=$HOME/.steam/protonPrefixes
 TEMPFILE=/tmp/shortix_temp
 COMPDATA=$HOME/.steam/steam/steamapps/compatdata
 SHADER_DIR=$HOME/.steam/steam/steamapps/shadercache
 SHADER_SHORTIX=$SHORTIX_DIR/_Shaders
-FIRSTRUN=$HOME/Shortix/.shortix
-LASTRUN=$HOME/Shortix/.shortix_last_run
+FIRSTRUN=$SHORTIX_DIR/.shortix
+LASTRUN=$SHORTIX_DIR/.shortix_last_run
 
 shortix_script () {
     #Check if and how protontricks is installed, if yes run in, if no, stop the script
@@ -37,7 +37,7 @@ shortix_script () {
     #Remove non existant symlinks
     find -L $SHORTIX_DIR -maxdepth 1 -type l -delete
 
-    # Chkef if the .id file is present. If true, then append the prefix id to the game name.
+    # Check if the .id file is present. If true, then append the prefix id to the game name.
     #Create symlinks based on the data from the temp file.
     #IFS defines the semicolon as column separator
     #Then read the both columns as variables and create symlinks based on the data of each line

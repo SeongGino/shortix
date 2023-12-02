@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SHORTIX_DIR=$HOME/Shortix
+SHORTIX_DIR=$HOME/.steam/protonPrefixes
 
 echo "##########################"
 echo "# Shortix prefix remover #"

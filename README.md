@@ -4,6 +4,7 @@ A script that creates human readable symlinks for Proton game prefixes
 # Prerequisites
 > [!NOTE]
 > This is made with desktop Arch Linux (or derivatives thereof) in mind, and *only* tested with the **native** version of Steam! Currently not guaranteed to symlink correctly on Flatpak environments.
+
 Install Protontricks either:
  - From the AUR:
  ```

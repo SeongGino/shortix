@@ -1,6 +1,5 @@
 [Unit]
 Description=Creates human-readable symlinks for Proton prefixes; checks every few minutes.
-StandardOutput=console
 
 [Service]
 Type=simple
@@ -9,4 +8,4 @@ RestartSec=1800s
 ExecStart=shortix
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
